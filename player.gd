@@ -9,7 +9,7 @@ func _ready() -> void:
 	
 func _physics_process(delta: float) -> void:
 	if is_instance_valid(target):
-		print(target.position)
-	else:
-		print_debug("mistake instance got deleted")
+		var richtungs_vec2 : Vector2 = target.position
+		
+
 	
