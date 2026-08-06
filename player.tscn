@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bgi46bem0hwo3"]
+
+[ext_resource type="Script" uid="uid://7mq55hl8gjfk" path="res://player.gd" id="1_4flbx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tpb3x"]
+radius = 30.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_tpb3x"]
+radius = 30.0
+height = 60.0
+
+[node name="player" type="CharacterBody2D" unique_id=531348411]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=94918325]
+shape = SubResource("CircleShape2D_tpb3x")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1624940620]
+mesh = SubResource("SphereMesh_tpb3x")
