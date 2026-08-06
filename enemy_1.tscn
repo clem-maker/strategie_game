@@ -7,6 +7,8 @@ radius = 27.0
 height = 90.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tpb3x"]
+radius = 27.0
+height = 90.0
 
 [node name="enemy_1" type="CharacterBody2D" unique_id=1599404814]
 script = ExtResource("1_mbxyh")
@@ -16,5 +18,4 @@ shape = SubResource("CapsuleShape2D_tpb3x")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1832390498]
 modulate = Color(1, 0.02745098, 0.15294118, 1)
-scale = Vector2(53.999996, 45.000004)
 mesh = SubResource("CapsuleMesh_tpb3x")
