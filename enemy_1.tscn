@@ -21,5 +21,6 @@ modulate = Color(1, 0.02745098, 0.15294118, 1)
 mesh = SubResource("CapsuleMesh_tpb3x")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1548921325]
+rect = Rect2(-27, -45, 54, 90)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
